@@ -1,0 +1,210 @@
+.about {
+    padding: 114px 0;
+
+    .about-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    
+        .about-card {
+            width: 270px;
+
+            .about-img {
+                width: 270px;
+                height: 270px;
+                margin-bottom: 30px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+
+                }
+                @media (max-width: 1200px) {
+                    width: 225px;
+                    height: 225px;
+                }
+                @media (max-width: 992px) {
+                    width: 270px;
+                    height: 270px;
+                }
+                @media (max-width: 767px) {
+                    width: 225px;
+                    height: 225px;
+                }
+                @media (max-width: 566px) {
+                    width: 280px;
+                    height: 228px;
+                    
+                    & img {
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .about-name {
+                font-style: normal;
+                font-weight: 700;
+                font-size: $_24px;
+                line-height: 28px;
+                text-transform: capitalize;
+                color: $black_deep;
+                margin-bottom: 6px;
+                
+                @media (max-width: 1200px) {
+                    font-size: $_18px;
+                    line-height: 21px;
+                }
+                @media (max-width: 992px) {
+                    font-size: $_24px;
+                    line-height: 28px;
+                }
+                @media (max-width: 767px) {
+                    font-size: $_18px;
+                    line-height: 21px;
+                }
+                
+            }
+
+            .about-position {
+                font-style: normal;
+                font-weight: 400;
+                font-size: $_18px;
+                line-height: 21px;
+                text-transform: uppercase;
+                color: $red;
+                margin-bottom: 18px;
+
+                @media (max-width: 1200px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                    margin-bottom: 22px;
+                }
+                @media (max-width: 992px) {
+                    font-size: $_18px;
+                    line-height: 21px;
+                }
+                @media (max-width: 767px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                    margin-bottom: 22px;
+                }
+                @media (max-width: 566px) {
+                    margin-bottom: 38px;   
+                }
+            }
+
+            .about-review {
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $_18px;
+                    line-height: 21px;
+                    color: $grey;
+                    margin-bottom: 38px;
+    
+                    @media (max-width: 1200px) {
+                        font-size: $_14px;
+                        line-height: 16px;
+                    }
+                    @media (max-width: 992px) {
+                        font-size: $_18px;
+                        line-height: 21px;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: $_14px;
+                        line-height: 16px;
+                    }
+                    @media (max-width: 566px) {
+                        margin-bottom: 55px;
+                    }
+                }                
+
+            }
+
+            .about-social__wrap {
+                display: flex;
+                justify-content: flex-start;
+
+                .about-social__card {                    
+
+                    & a {
+                        @include link;
+
+                        &:hover {
+                            @include link_hover;
+                        }
+
+                        @media (max-width: 1200px) {
+                            width: 32px;
+                            height: 32px;
+                        }
+                        @media (max-width: 566px) {
+                            width: 39px;
+                            height: 39px;
+                        }
+                    }
+                }
+            }
+            
+            @media (max-width: 1200px) {
+                width: 225px;
+            }
+            @media (max-width: 992px) {
+                width: 270px;
+                margin-bottom: 40px;
+            }
+            @media (max-width: 767px) {
+                width: 225px;
+            }
+            @media (max-width: 566px) {
+                width: 280px;
+                margin-bottom: 49px;
+            }
+        }
+
+        @media (max-width: 566px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (max-width: 566px) {
+            flex-wrap: nowrap;
+        }
+    }
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 970px;
+        }
+        padding: 90px 0;
+    }
+    @media (max-width: 992px) {
+        .container {
+            max-width: 750px;
+        }
+        padding: 75px 0;
+    }
+    @media (max-width: 767px) {
+        .container {
+            max-width: 600px;
+        }
+        padding: 35px 0;
+    }
+    @media (max-width: 566px) {
+        .container {
+            width: 90%;
+        }
+        padding: 35px 0;
+    }
+    
+    @media (max-width: 320px) {
+        .container {
+            max-width: 280px;
+        }
+    }
+
+}

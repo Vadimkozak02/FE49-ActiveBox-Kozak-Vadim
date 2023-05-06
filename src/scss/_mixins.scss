@@ -1,0 +1,60 @@
+// button
+
+@mixin btn_hover {
+    background: $red_deep;
+}
+
+@mixin btn_active {
+    box-shadow: 4px 4px 30px $red;
+}
+
+// link
+
+@mixin link_hover {
+    color: $red;
+    border: 1px solid $red;
+}
+
+// img
+
+@mixin img_hover {
+    background: rgba(255, 67, 67, 0.8);
+}
+
+@mixin img_active {
+    background: rgba(185, 12, 12, 0.8);
+}
+
+// text
+
+@mixin description {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: $_21px;
+    color: $grey;
+}
+
+@mixin contact {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $white;
+}
+
+@mixin link {
+    color: $grey_icon;
+    width: 39px;
+    height: 39px;
+    border: 1px solid $grey_icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+    transition: .3s;
+}

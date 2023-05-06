@@ -1,0 +1,61 @@
+.footer {
+    padding: 24px 0;
+    background: $blue_deep;
+
+    .footer-wrapper {
+        
+        .footer-author {
+            width: 370px;
+            margin: auto;
+            
+            p {
+                @include description;
+                color: $grey_light;
+                text-align: center;
+                text-transform: capitalize;
+
+                span {
+                    @include description;
+                    color: $white;
+                    text-transform: capitalize;
+
+                    @media (max-width: 1200px) {
+                        font-size: $_14px;
+                        line-height: 16px;
+                    }
+                }
+
+                @media (max-width: 1200px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                }
+            }
+
+            @media (max-width: 566px) {
+                width: 280px;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 970px;
+        }
+    }
+    @media (max-width: 992px) {
+        .container {
+            max-width: 750px;
+        }
+    }
+    @media (max-width: 767px) {
+        .container {
+            max-width: 600px;
+        }
+    }
+    @media (max-width: 566px) {
+        .container {
+            max-width: 400px;
+        }
+    }
+
+}

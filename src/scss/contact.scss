@@ -1,0 +1,151 @@
+.contact {
+    padding: 71px 0 67px;
+    background: #353C65;
+
+    .contact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 -15px;
+
+        .contact-card {
+            width: 370px;
+            // padding: 0 15px;
+
+            .contact-card__title {
+                @include contact;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 29px;
+
+
+                @media (max-width: 1200px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                }
+                @media (max-width: 767px) {
+                    margin-bottom: 15px;
+                }
+                @media (max-width: 566px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                    margin-bottom: 34px;
+                }
+                @media (max-width: 320px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                    margin-bottom: 34px;
+                }
+            }
+
+            .contact-card__description {
+                @include contact;
+
+                .contact-card__link {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 170px;
+                    margin: auto;
+
+                    & a {
+                        @include link;
+
+                        &:hover {
+                            @include link_hover;
+                        }
+
+                        @media (max-width: 1200px) {
+                            width: 33px;
+                            height: 33px;
+                        }
+                    }
+                }
+
+                @media (max-width: 1200px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                }
+                @media (max-width: 566px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                }
+                @media (max-width: 320px) {
+                    font-size: $_14px;
+                    line-height: 16px;
+                }
+                
+            }
+
+            @media (max-width: 1200px) {
+                width: 310px;
+            }
+            @media (max-width: 992px) {
+                width: 240px;
+            }
+            @media (max-width: 767px) {
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            @media (max-width: 566px) {
+                width: 280px;
+                margin-bottom: 70px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            @media (max-width: 566px) {
+                width: 280px;
+                margin-bottom: 70px;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            justify-content: space-evenly;
+        }
+        @media (max-width: 566px) {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        @media (max-width: 320px) {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 970px;
+        }
+    }
+    @media (max-width: 992px) {
+        .container {
+            max-width: 750px;
+        }
+    }
+    @media (max-width: 767px) {
+        .container {
+            max-width: 600px;
+        }
+    }
+    @media (max-width: 566px){
+        .container {
+            max-width: 280px;
+        }
+    }
+    @media (max-width: 320px){
+        .container {
+            max-width: 280px;
+        }
+    }
+}
