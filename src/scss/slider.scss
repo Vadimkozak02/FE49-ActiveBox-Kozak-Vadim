@@ -1,16 +1,25 @@
 .slider {
     padding: 114px 0;
     overflow: hidden;
+    position: relative;
+    
+    @media (max-width: 992px) {
+        padding: 35px 0;
+    }
 }
 .slider-wrapper {
-    
+    margin-bottom: 15px;
+    width: 100%;
 }
 .slider-slide {
     display: flex;
-    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+    }
 }
 .slider-img {
-    width: 50%;
+    width: 100%;
     max-height: 490px;
 
     img {
@@ -20,15 +29,22 @@
         object-position: center;
     }
 
-    // @media (max-width: 1200px) {
-    //     width: 502px;
-    //     height: 330px;
-    // }
+    @media (max-width: 767px) {
+        width: 50%;
+    }
 }
 .slider-text {
-    width: 50%;
+    width: 100%;
     padding: 116px 15px;
     background-color: $purple;
+
+    @media (max-width: 767px) {
+        width: 50%;
+        padding: 50px 0;
+    }
+    @media (max-width: 566px) {
+
+    }
 }
 .slider-description {
     width: 470px;
@@ -47,6 +63,19 @@
             font-size: $_24px;
             line-height: 32px;
         }
+        @media (max-width: 566px) {
+            font-size: $_18px;
+            line-height: 24px;
+        }
+        @media (max-width: 320px) {
+            font-size: $_14px;
+            line-height: 18px;
+        }
+        
+    }
+    
+    @media (max-width: 1200px) {
+        width: 80%;
     }
 }
 .slider-author {
@@ -59,13 +88,37 @@
         line-height: 15px;
         text-transform: uppercase;
         color: $white;
+
+        @media (max-width: 566px) {
+            font-weight: 400;
+        }
+        @media (max-width: 320px) {
+            font-weight: 300;
+            font-size: 11px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        width: 80%;
     }
 }
 .swiper-horizontal {
 
     .slider-pagination {
-        padding-top: 10px;
+        margin-top: 10px;
         bottom: auto;
     }
+    .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #7E5D6F;
+    }
     
+}
+.slider-navigation {
+    @media (max-width: 992px) {
+        display: none;
+    }
 }

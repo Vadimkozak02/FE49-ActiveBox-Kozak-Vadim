@@ -86,25 +86,127 @@
                             &:active {
                                 color: $red_deep;
                             }
-                        }    
+                        }   
+                        @media (max-width: 992px) {
+                            .header-navigation__link {
+                                font-size: $_24px;
+                            }
+                        } 
                         @media (max-width: 767px) {
                             .header-navigation__link {
                                 font-size: $_18px;
                             }
                         }    
                     }
-                    @media (max-width: 767px) {
-                        .header-navigation-item {
-                            width: 180px;
-                        }
-                    } 
-                    @media (max-width: 767px) {
-                        display: flex;
+
+                    @media (max-width: 992px) {
                         flex-direction: column;
                         align-items: center;
+                        padding: 100px 0;
+                        
+
+                        .header-navigation-item {
+                            width: 100%;
+                            margin-bottom: 20px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
                     }
-                }                
-            }            
+                    // @media (max-width: 767px) {
+                    //     .header-navigation-item {
+                    //         width: 180px;
+                    //     }
+                    // } 
+                    // @media (max-width: 767px) {
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     align-items: center;
+                    // }
+
+                    
+                } 
+
+                .header-nav__close {
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: 40px;
+                    right: 125px;
+                    display: none;                   
+
+                    .header-nav__close-line {
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 50%;
+                        
+
+                        &:first-child {
+                            transform: translateY(-50%) rotate(45deg);
+                        }
+                        &:last-child {
+                            transform: translateY(-50%) rotate(-45deg);
+                        }
+                    }
+
+                    @media (max-width: 992px) {
+                        display: block;
+                    }
+                }
+                
+                @media (max-width: 992px) {
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    background-image: url(../img/bg/burger-bg.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    z-index: 10;
+                    transform: translateX(100%);
+                    transition: .3s;
+                }
+            } 
+            .header-navigation-active {
+                transform: translateX(0);
+            }
+            
+            
+            .header-burger {
+                width: 40px;
+                height: 28px;
+                position: relative;
+                display: none;
+
+                .burger-line {
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 0;
+                }
+                .burger-line__first {
+                    top: 0;
+                }
+                .burger-line__second {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .burger-line__third {
+                    bottom: 0;
+                }
+
+                @media (max-width: 992px) {
+                    display: block;
+                }
+            }
         }
 
         .header-title {
