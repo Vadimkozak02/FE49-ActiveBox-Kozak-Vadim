@@ -15,6 +15,10 @@
     border: 1px solid $red;
 }
 
+@mixin link_facebook {
+    color: blue;
+}
+
 // img
 
 @mixin img_hover {

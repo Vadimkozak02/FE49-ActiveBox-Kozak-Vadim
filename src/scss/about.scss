@@ -132,12 +132,29 @@
 
                 .about-social__card {                    
 
-                    & a {
-                        @include link;
+                    .fa-facebook-f {
+                        
+                        &:hover {
+                            color: blue;
+                        }
+                    }
+
+                    .fa-twitter {
 
                         &:hover {
-                            @include link_hover;
+                            color: rgb(21, 157, 185);
                         }
+                    }
+
+                    .fa-linkedin {
+
+                        &:hover {
+                            color: rgb(20, 69, 143);
+                        }
+                    }
+
+                    & a {
+                        @include link;
 
                         @media (max-width: 1200px) {
                             width: 32px;
