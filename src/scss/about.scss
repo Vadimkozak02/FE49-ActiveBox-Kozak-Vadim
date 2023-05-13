@@ -3,16 +3,16 @@
 
     .about-wrapper {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-    
+        margin: 0 -15px;
     
         .about-card {
-            width: 270px;
+            width: 263px;
+            margin: 0 15px;
 
             .about-img {
-                width: 270px;
-                height: 270px;
+                width: 263px;
+                height: 263px;
                 margin-bottom: 30px;
 
                 & img {
@@ -21,8 +21,8 @@
 
                 }
                 @media (max-width: 1200px) {
-                    width: 225px;
-                    height: 225px;
+                    width: 214px;
+                    height: 214px;
                 }
                 @media (max-width: 992px) {
                     width: 270px;
@@ -98,6 +98,7 @@
             }
 
             .about-review {
+                margin-bottom: 38px;
 
                 p {
                     font-style: normal;
@@ -105,7 +106,7 @@
                     font-size: $_18px;
                     line-height: 21px;
                     color: $grey;
-                    margin-bottom: 38px;
+                    
     
                     @media (max-width: 1200px) {
                         font-size: $_14px;
@@ -118,9 +119,6 @@
                     @media (max-width: 767px) {
                         font-size: $_14px;
                         line-height: 16px;
-                    }
-                    @media (max-width: 566px) {
-                        margin-bottom: 55px;
                     }
                 }                
 
@@ -180,8 +178,17 @@
             }
             @media (max-width: 566px) {
                 width: 280px;
-                margin-bottom: 49px;
+                margin-bottom: 56px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
+        }
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
         @media (max-width: 566px) {
@@ -209,19 +216,19 @@
         .container {
             max-width: 600px;
         }
-        padding: 35px 0;
     }
     @media (max-width: 566px) {
         .container {
             width: 90%;
         }
-        padding: 35px 0;
+        padding: 75px 0;
     }
     
     @media (max-width: 320px) {
         .container {
             max-width: 280px;
         }
+        padding: 35px 0;
     }
 
 }

@@ -4,13 +4,12 @@
 
     .contact-wrapper {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0 -15px;
+        margin: 0 -15px;
 
         .contact-card {
             width: 370px;
-            // padding: 0 15px;
+            margin: 0 15px;
 
             .contact-card__title {
                 @include contact;

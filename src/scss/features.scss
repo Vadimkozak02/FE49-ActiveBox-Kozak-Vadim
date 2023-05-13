@@ -5,10 +5,8 @@
 
         .features-top {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
-            margin-bottom: 88px;
-            padding: 0 -15px;
+            margin: 0 -15px 88px;
 
             @media (max-width: 992px) {
                 display: block;
@@ -35,14 +33,14 @@
                 max-width: 750px;
             }
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
         }
         @media (max-width: 767px) {
             .container {
                 max-width: 600px;
             }
             display: flex;
-            justify-content: center;
+            // justify-content: center;
         }
         @media (max-width: 566px) {
             .container {
@@ -69,7 +67,7 @@
 }
 
 .features-card__wrap {
-    padding: 0 15px;
+    margin: 0 15px;
     width: 370px;
 
     .features-card__img {
@@ -88,6 +86,9 @@
                 height: 100%;
                 margin: auto;
             }
+        }
+        @media (max-width: 992px) {
+            margin-bottom: 20px;
         }
         @media (max-width: 566px) {
             width: 75px;
@@ -115,6 +116,9 @@
             font-size: $_21px;
             margin-bottom: 30px;
         }
+        @media (max-width: 992px) {
+            margin-bottom: 20px;
+        }
         @media (max-width: 566px) {
             font-size: $_18px;
             line-height: $_21px;
@@ -125,39 +129,41 @@
     .features-card__desc {
         @include description;
         text-align: center;
+        font-size: 1.1rem;
 
         @media (max-width: 1200px) {
             font-size: $_13px;
         }
-        @media (max-width: 566px) {
-            font-size: $_14px;
-            line-height: 16px;
+        @media (max-width: 992px) {
+            font-size: $_18px;
         }
+        // @media (max-width: 767px) {
+        //     font-size: $_18px;
+        // }
     }
 
     @media (max-width: 1200px) {
         width: 310px;
     }
     @media (max-width: 992px) {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         &:last-child {
             margin-bottom: 0;
         }
     }
     @media (max-width: 767px) {
-        width: 290px;
+        width: 245px;
     }
     @media (max-width: 566px) {
-        width: 280px;
+        width: 85%;
         margin-bottom: 40px;
     }
 }
 
 .features-bottom {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 -15px;
+    margin: 0 -15px;
 
     @media (max-width: 992px) {
         display: block;
