@@ -16,6 +16,10 @@
 .slider-slide {
     display: flex;
 
+    &:nth-child(even) .slider-text {
+        background: darkgoldenrod;
+    }
+
     @media (max-width: 767px) {
         flex-wrap: wrap;
     }
